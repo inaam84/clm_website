@@ -1,0 +1,1989 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <style>
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            width: 650px;
+            /* margin: 5px auto; */
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-footer {
+            padding: 10px;
+            font-size: 0.8rem;
+            line-height: 1.2;
+            /* Tighten up text spacing */
+        }
+
+        .footer-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 8px;
+            /* Add vertical spacing between rows */
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 5px;
+        }
+
+        .btn-group .btn {
+            padding: 2px 10px;
+            /* Smaller buttons */
+            font-size: 0.8rem;
+            /* Compact text size */
+        }
+    </style>
+</head>
+
+<body>
+    <p><br></p>
+    <div class="row">
+        <div class="d-grid gap-2 col-8 mx-auto">
+            <ul class="nav nav-pills " role="tablist">
+                                <li class="nav-item" role="relationships">
+                    <button class="nav-link active" id="pills-relationships-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-relationships" type="button" role="tab" aria-controls="pills-relationships"
+                        aria-selected="true">Relationships</button>
+                </li>
+                                <li class="nav-item" role="wellbeing">
+                    <button class="nav-link " id="pills-wellbeing-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-wellbeing" type="button" role="tab" aria-controls="pills-wellbeing"
+                        aria-selected="true">Wellbeing</button>
+                </li>
+                                <li class="nav-item" role="attending">
+                    <button class="nav-link " id="pills-attending-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-attending" type="button" role="tab" aria-controls="pills-attending"
+                        aria-selected="true">Attending</button>
+                </li>
+                                <li class="nav-item" role="participating">
+                    <button class="nav-link " id="pills-participating-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-participating" type="button" role="tab" aria-controls="pills-participating"
+                        aria-selected="true">Participating</button>
+                </li>
+                                <li class="nav-item" role="achieving">
+                    <button class="nav-link " id="pills-achieving-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-achieving" type="button" role="tab" aria-controls="pills-achieving"
+                        aria-selected="true">Achieving</button>
+                </li>
+                                <li class="nav-item" role="moving-on">
+                    <button class="nav-link " id="pills-moving-on-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-moving-on" type="button" role="tab" aria-controls="pills-moving-on"
+                        aria-selected="true">Moving-On</button>
+                </li>
+                            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane p-3 fade  show active" id="pills-relationships"
+                    role="tabpanel" aria-labelledby="pills-relationships-tab">
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">relationships</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                7
+                            </div>
+                            <h3 class="lead m-0">Demonstrates empathy by adjusting their own behaviours</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Relationships7" id="skill-yes-Relationships7" value="yes" class="btn-check">
+                                    <label for="skill-yes-Relationships7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Relationships7" id="skill-no-Relationships7" value="no" class="btn-check">
+                                    <label for="skill-no-Relationships7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Relationships7" id="frequency-always-Relationships7" value="always" class="btn-check">
+                                    <label for="frequency-always-Relationships7" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Relationships7" id="frequency-often-Relationships7" value="often" class="btn-check">
+                                    <label for="frequency-often-Relationships7" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Relationships7" id="frequency-never-Relationships7" value="never" class="btn-check">
+                                    <label for="frequency-never-Relationships7" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Relationships7" id="barrier-yes-Relationships7" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Relationships7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Relationships7" id="barrier-no-Relationships7" value="no" class="btn-check">
+                                    <label for="barrier-no-Relationships7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">relationships</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                6
+                            </div>
+                            <h3 class="lead m-0">Able to sustain mutually respectful friendships</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Relationships6" id="skill-yes-Relationships6" value="yes" class="btn-check">
+                                    <label for="skill-yes-Relationships6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Relationships6" id="skill-no-Relationships6" value="no" class="btn-check">
+                                    <label for="skill-no-Relationships6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Relationships6" id="frequency-always-Relationships6" value="always" class="btn-check">
+                                    <label for="frequency-always-Relationships6" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Relationships6" id="frequency-often-Relationships6" value="often" class="btn-check">
+                                    <label for="frequency-often-Relationships6" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Relationships6" id="frequency-never-Relationships6" value="never" class="btn-check">
+                                    <label for="frequency-never-Relationships6" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Relationships6" id="barrier-yes-Relationships6" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Relationships6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Relationships6" id="barrier-no-Relationships6" value="no" class="btn-check">
+                                    <label for="barrier-no-Relationships6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">relationships</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                5
+                            </div>
+                            <h3 class="lead m-0">Able to form positive attachments</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Relationships5" id="skill-yes-Relationships5" value="yes" class="btn-check">
+                                    <label for="skill-yes-Relationships5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Relationships5" id="skill-no-Relationships5" value="no" class="btn-check">
+                                    <label for="skill-no-Relationships5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Relationships5" id="frequency-always-Relationships5" value="always" class="btn-check">
+                                    <label for="frequency-always-Relationships5" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Relationships5" id="frequency-often-Relationships5" value="often" class="btn-check">
+                                    <label for="frequency-often-Relationships5" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Relationships5" id="frequency-never-Relationships5" value="never" class="btn-check">
+                                    <label for="frequency-never-Relationships5" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Relationships5" id="barrier-yes-Relationships5" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Relationships5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Relationships5" id="barrier-no-Relationships5" value="no" class="btn-check">
+                                    <label for="barrier-no-Relationships5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">relationships</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                4
+                            </div>
+                            <h3 class="lead m-0">Able to work and play co-operatively</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Relationships4" id="skill-yes-Relationships4" value="yes" class="btn-check">
+                                    <label for="skill-yes-Relationships4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Relationships4" id="skill-no-Relationships4" value="no" class="btn-check">
+                                    <label for="skill-no-Relationships4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Relationships4" id="frequency-always-Relationships4" value="always" class="btn-check">
+                                    <label for="frequency-always-Relationships4" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Relationships4" id="frequency-often-Relationships4" value="often" class="btn-check">
+                                    <label for="frequency-often-Relationships4" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Relationships4" id="frequency-never-Relationships4" value="never" class="btn-check">
+                                    <label for="frequency-never-Relationships4" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Relationships4" id="barrier-yes-Relationships4" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Relationships4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Relationships4" id="barrier-no-Relationships4" value="no" class="btn-check">
+                                    <label for="barrier-no-Relationships4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">relationships</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                3
+                            </div>
+                            <h3 class="lead m-0">Shows sensitivity to their own and others’ feelings</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Relationships3" id="skill-yes-Relationships3" value="yes" class="btn-check">
+                                    <label for="skill-yes-Relationships3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Relationships3" id="skill-no-Relationships3" value="no" class="btn-check">
+                                    <label for="skill-no-Relationships3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Relationships3" id="frequency-always-Relationships3" value="always" class="btn-check">
+                                    <label for="frequency-always-Relationships3" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Relationships3" id="frequency-often-Relationships3" value="often" class="btn-check">
+                                    <label for="frequency-often-Relationships3" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Relationships3" id="frequency-never-Relationships3" value="never" class="btn-check">
+                                    <label for="frequency-never-Relationships3" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Relationships3" id="barrier-yes-Relationships3" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Relationships3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Relationships3" id="barrier-no-Relationships3" value="no" class="btn-check">
+                                    <label for="barrier-no-Relationships3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">relationships</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                2
+                            </div>
+                            <h3 class="lead m-0">Able to interact positively with peers</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Relationships2" id="skill-yes-Relationships2" value="yes" class="btn-check">
+                                    <label for="skill-yes-Relationships2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Relationships2" id="skill-no-Relationships2" value="no" class="btn-check">
+                                    <label for="skill-no-Relationships2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Relationships2" id="frequency-always-Relationships2" value="always" class="btn-check">
+                                    <label for="frequency-always-Relationships2" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Relationships2" id="frequency-often-Relationships2" value="often" class="btn-check">
+                                    <label for="frequency-often-Relationships2" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Relationships2" id="frequency-never-Relationships2" value="never" class="btn-check">
+                                    <label for="frequency-never-Relationships2" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Relationships2" id="barrier-yes-Relationships2" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Relationships2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Relationships2" id="barrier-no-Relationships2" value="no" class="btn-check">
+                                    <label for="barrier-no-Relationships2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">relationships</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                1
+                            </div>
+                            <h3 class="lead m-0">Able to interact positively with supporting adults</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Relationships1" id="skill-yes-Relationships1" value="yes" class="btn-check">
+                                    <label for="skill-yes-Relationships1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Relationships1" id="skill-no-Relationships1" value="no" class="btn-check">
+                                    <label for="skill-no-Relationships1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Relationships1" id="frequency-always-Relationships1" value="always" class="btn-check">
+                                    <label for="frequency-always-Relationships1" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Relationships1" id="frequency-often-Relationships1" value="often" class="btn-check">
+                                    <label for="frequency-often-Relationships1" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Relationships1" id="frequency-never-Relationships1" value="never" class="btn-check">
+                                    <label for="frequency-never-Relationships1" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Relationships1" id="barrier-yes-Relationships1" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Relationships1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Relationships1" id="barrier-no-Relationships1" value="no" class="btn-check">
+                                    <label for="barrier-no-Relationships1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                    </div>
+                                <div class="tab-pane p-3 fade " id="pills-wellbeing"
+                    role="tabpanel" aria-labelledby="pills-wellbeing-tab">
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">wellbeing</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                7
+                            </div>
+                            <h3 class="lead m-0">Has the confidence to speak out about emotional wellbeing</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Wellbeing7" id="skill-yes-Wellbeing7" value="yes" class="btn-check">
+                                    <label for="skill-yes-Wellbeing7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Wellbeing7" id="skill-no-Wellbeing7" value="no" class="btn-check">
+                                    <label for="skill-no-Wellbeing7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Wellbeing7" id="frequency-always-Wellbeing7" value="always" class="btn-check">
+                                    <label for="frequency-always-Wellbeing7" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing7" id="frequency-often-Wellbeing7" value="often" class="btn-check">
+                                    <label for="frequency-often-Wellbeing7" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing7" id="frequency-never-Wellbeing7" value="never" class="btn-check">
+                                    <label for="frequency-never-Wellbeing7" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Wellbeing7" id="barrier-yes-Wellbeing7" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Wellbeing7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Wellbeing7" id="barrier-no-Wellbeing7" value="no" class="btn-check">
+                                    <label for="barrier-no-Wellbeing7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">wellbeing</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                6
+                            </div>
+                            <h3 class="lead m-0">Demonstrates self-awareness</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Wellbeing6" id="skill-yes-Wellbeing6" value="yes" class="btn-check">
+                                    <label for="skill-yes-Wellbeing6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Wellbeing6" id="skill-no-Wellbeing6" value="no" class="btn-check">
+                                    <label for="skill-no-Wellbeing6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Wellbeing6" id="frequency-always-Wellbeing6" value="always" class="btn-check">
+                                    <label for="frequency-always-Wellbeing6" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing6" id="frequency-often-Wellbeing6" value="often" class="btn-check">
+                                    <label for="frequency-often-Wellbeing6" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing6" id="frequency-never-Wellbeing6" value="never" class="btn-check">
+                                    <label for="frequency-never-Wellbeing6" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Wellbeing6" id="barrier-yes-Wellbeing6" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Wellbeing6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Wellbeing6" id="barrier-no-Wellbeing6" value="no" class="btn-check">
+                                    <label for="barrier-no-Wellbeing6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">wellbeing</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                5
+                            </div>
+                            <h3 class="lead m-0">Able to manage own basic hygiene needs</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Wellbeing5" id="skill-yes-Wellbeing5" value="yes" class="btn-check">
+                                    <label for="skill-yes-Wellbeing5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Wellbeing5" id="skill-no-Wellbeing5" value="no" class="btn-check">
+                                    <label for="skill-no-Wellbeing5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Wellbeing5" id="frequency-always-Wellbeing5" value="always" class="btn-check">
+                                    <label for="frequency-always-Wellbeing5" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing5" id="frequency-often-Wellbeing5" value="often" class="btn-check">
+                                    <label for="frequency-often-Wellbeing5" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing5" id="frequency-never-Wellbeing5" value="never" class="btn-check">
+                                    <label for="frequency-never-Wellbeing5" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Wellbeing5" id="barrier-yes-Wellbeing5" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Wellbeing5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Wellbeing5" id="barrier-no-Wellbeing5" value="no" class="btn-check">
+                                    <label for="barrier-no-Wellbeing5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">wellbeing</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                4
+                            </div>
+                            <h3 class="lead m-0">Has an awareness of stressors </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Wellbeing4" id="skill-yes-Wellbeing4" value="yes" class="btn-check">
+                                    <label for="skill-yes-Wellbeing4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Wellbeing4" id="skill-no-Wellbeing4" value="no" class="btn-check">
+                                    <label for="skill-no-Wellbeing4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Wellbeing4" id="frequency-always-Wellbeing4" value="always" class="btn-check">
+                                    <label for="frequency-always-Wellbeing4" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing4" id="frequency-often-Wellbeing4" value="often" class="btn-check">
+                                    <label for="frequency-often-Wellbeing4" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing4" id="frequency-never-Wellbeing4" value="never" class="btn-check">
+                                    <label for="frequency-never-Wellbeing4" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Wellbeing4" id="barrier-yes-Wellbeing4" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Wellbeing4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Wellbeing4" id="barrier-no-Wellbeing4" value="no" class="btn-check">
+                                    <label for="barrier-no-Wellbeing4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">wellbeing</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                3
+                            </div>
+                            <h3 class="lead m-0">Able to seek support through co-regulation of emotions</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Wellbeing3" id="skill-yes-Wellbeing3" value="yes" class="btn-check">
+                                    <label for="skill-yes-Wellbeing3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Wellbeing3" id="skill-no-Wellbeing3" value="no" class="btn-check">
+                                    <label for="skill-no-Wellbeing3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Wellbeing3" id="frequency-always-Wellbeing3" value="always" class="btn-check">
+                                    <label for="frequency-always-Wellbeing3" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing3" id="frequency-often-Wellbeing3" value="often" class="btn-check">
+                                    <label for="frequency-often-Wellbeing3" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing3" id="frequency-never-Wellbeing3" value="never" class="btn-check">
+                                    <label for="frequency-never-Wellbeing3" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Wellbeing3" id="barrier-yes-Wellbeing3" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Wellbeing3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Wellbeing3" id="barrier-no-Wellbeing3" value="no" class="btn-check">
+                                    <label for="barrier-no-Wellbeing3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">wellbeing</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                2
+                            </div>
+                            <h3 class="lead m-0">Begins to recognize danger and seeks support</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Wellbeing2" id="skill-yes-Wellbeing2" value="yes" class="btn-check">
+                                    <label for="skill-yes-Wellbeing2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Wellbeing2" id="skill-no-Wellbeing2" value="no" class="btn-check">
+                                    <label for="skill-no-Wellbeing2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Wellbeing2" id="frequency-always-Wellbeing2" value="always" class="btn-check">
+                                    <label for="frequency-always-Wellbeing2" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing2" id="frequency-often-Wellbeing2" value="often" class="btn-check">
+                                    <label for="frequency-often-Wellbeing2" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing2" id="frequency-never-Wellbeing2" value="never" class="btn-check">
+                                    <label for="frequency-never-Wellbeing2" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Wellbeing2" id="barrier-yes-Wellbeing2" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Wellbeing2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Wellbeing2" id="barrier-no-Wellbeing2" value="no" class="btn-check">
+                                    <label for="barrier-no-Wellbeing2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">wellbeing</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                1
+                            </div>
+                            <h3 class="lead m-0">Able to express a range of emotions</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Wellbeing1" id="skill-yes-Wellbeing1" value="yes" class="btn-check">
+                                    <label for="skill-yes-Wellbeing1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Wellbeing1" id="skill-no-Wellbeing1" value="no" class="btn-check">
+                                    <label for="skill-no-Wellbeing1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Wellbeing1" id="frequency-always-Wellbeing1" value="always" class="btn-check">
+                                    <label for="frequency-always-Wellbeing1" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing1" id="frequency-often-Wellbeing1" value="often" class="btn-check">
+                                    <label for="frequency-often-Wellbeing1" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Wellbeing1" id="frequency-never-Wellbeing1" value="never" class="btn-check">
+                                    <label for="frequency-never-Wellbeing1" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Wellbeing1" id="barrier-yes-Wellbeing1" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Wellbeing1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Wellbeing1" id="barrier-no-Wellbeing1" value="no" class="btn-check">
+                                    <label for="barrier-no-Wellbeing1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                    </div>
+                                <div class="tab-pane p-3 fade " id="pills-attending"
+                    role="tabpanel" aria-labelledby="pills-attending-tab">
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">attending</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                7
+                            </div>
+                            <h3 class="lead m-0">Sustains good levels of attendance</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Attending7" id="skill-yes-Attending7" value="yes" class="btn-check">
+                                    <label for="skill-yes-Attending7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Attending7" id="skill-no-Attending7" value="no" class="btn-check">
+                                    <label for="skill-no-Attending7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Attending7" id="frequency-always-Attending7" value="always" class="btn-check">
+                                    <label for="frequency-always-Attending7" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Attending7" id="frequency-often-Attending7" value="often" class="btn-check">
+                                    <label for="frequency-often-Attending7" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Attending7" id="frequency-never-Attending7" value="never" class="btn-check">
+                                    <label for="frequency-never-Attending7" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Attending7" id="barrier-yes-Attending7" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Attending7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Attending7" id="barrier-no-Attending7" value="no" class="btn-check">
+                                    <label for="barrier-no-Attending7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">attending</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                6
+                            </div>
+                            <h3 class="lead m-0">Able to access support</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Attending6" id="skill-yes-Attending6" value="yes" class="btn-check">
+                                    <label for="skill-yes-Attending6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Attending6" id="skill-no-Attending6" value="no" class="btn-check">
+                                    <label for="skill-no-Attending6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Attending6" id="frequency-always-Attending6" value="always" class="btn-check">
+                                    <label for="frequency-always-Attending6" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Attending6" id="frequency-often-Attending6" value="often" class="btn-check">
+                                    <label for="frequency-often-Attending6" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Attending6" id="frequency-never-Attending6" value="never" class="btn-check">
+                                    <label for="frequency-never-Attending6" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Attending6" id="barrier-yes-Attending6" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Attending6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Attending6" id="barrier-no-Attending6" value="no" class="btn-check">
+                                    <label for="barrier-no-Attending6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">attending</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                5
+                            </div>
+                            <h3 class="lead m-0">Engages in leisure and/or outdoor activities</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Attending5" id="skill-yes-Attending5" value="yes" class="btn-check">
+                                    <label for="skill-yes-Attending5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Attending5" id="skill-no-Attending5" value="no" class="btn-check">
+                                    <label for="skill-no-Attending5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Attending5" id="frequency-always-Attending5" value="always" class="btn-check">
+                                    <label for="frequency-always-Attending5" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Attending5" id="frequency-often-Attending5" value="often" class="btn-check">
+                                    <label for="frequency-often-Attending5" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Attending5" id="frequency-never-Attending5" value="never" class="btn-check">
+                                    <label for="frequency-never-Attending5" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Attending5" id="barrier-yes-Attending5" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Attending5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Attending5" id="barrier-no-Attending5" value="no" class="btn-check">
+                                    <label for="barrier-no-Attending5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">attending</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                4
+                            </div>
+                            <h3 class="lead m-0">Regularly feels positive about attending school</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Attending4" id="skill-yes-Attending4" value="yes" class="btn-check">
+                                    <label for="skill-yes-Attending4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Attending4" id="skill-no-Attending4" value="no" class="btn-check">
+                                    <label for="skill-no-Attending4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Attending4" id="frequency-always-Attending4" value="always" class="btn-check">
+                                    <label for="frequency-always-Attending4" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Attending4" id="frequency-often-Attending4" value="often" class="btn-check">
+                                    <label for="frequency-often-Attending4" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Attending4" id="frequency-never-Attending4" value="never" class="btn-check">
+                                    <label for="frequency-never-Attending4" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Attending4" id="barrier-yes-Attending4" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Attending4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Attending4" id="barrier-no-Attending4" value="no" class="btn-check">
+                                    <label for="barrier-no-Attending4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">attending</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                3
+                            </div>
+                            <h3 class="lead m-0">Engages in positive routines for entering school</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Attending3" id="skill-yes-Attending3" value="yes" class="btn-check">
+                                    <label for="skill-yes-Attending3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Attending3" id="skill-no-Attending3" value="no" class="btn-check">
+                                    <label for="skill-no-Attending3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Attending3" id="frequency-always-Attending3" value="always" class="btn-check">
+                                    <label for="frequency-always-Attending3" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Attending3" id="frequency-often-Attending3" value="often" class="btn-check">
+                                    <label for="frequency-often-Attending3" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Attending3" id="frequency-never-Attending3" value="never" class="btn-check">
+                                    <label for="frequency-never-Attending3" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Attending3" id="barrier-yes-Attending3" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Attending3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Attending3" id="barrier-no-Attending3" value="no" class="btn-check">
+                                    <label for="barrier-no-Attending3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">attending</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                2
+                            </div>
+                            <h3 class="lead m-0">Able to separate from close carers </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Attending2" id="skill-yes-Attending2" value="yes" class="btn-check">
+                                    <label for="skill-yes-Attending2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Attending2" id="skill-no-Attending2" value="no" class="btn-check">
+                                    <label for="skill-no-Attending2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Attending2" id="frequency-always-Attending2" value="always" class="btn-check">
+                                    <label for="frequency-always-Attending2" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Attending2" id="frequency-often-Attending2" value="often" class="btn-check">
+                                    <label for="frequency-often-Attending2" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Attending2" id="frequency-never-Attending2" value="never" class="btn-check">
+                                    <label for="frequency-never-Attending2" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Attending2" id="barrier-yes-Attending2" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Attending2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Attending2" id="barrier-no-Attending2" value="no" class="btn-check">
+                                    <label for="barrier-no-Attending2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">attending</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                1
+                            </div>
+                            <h3 class="lead m-0">Accepts being with others</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Attending1" id="skill-yes-Attending1" value="yes" class="btn-check">
+                                    <label for="skill-yes-Attending1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Attending1" id="skill-no-Attending1" value="no" class="btn-check">
+                                    <label for="skill-no-Attending1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Attending1" id="frequency-always-Attending1" value="always" class="btn-check">
+                                    <label for="frequency-always-Attending1" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Attending1" id="frequency-often-Attending1" value="often" class="btn-check">
+                                    <label for="frequency-often-Attending1" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Attending1" id="frequency-never-Attending1" value="never" class="btn-check">
+                                    <label for="frequency-never-Attending1" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Attending1" id="barrier-yes-Attending1" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Attending1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Attending1" id="barrier-no-Attending1" value="no" class="btn-check">
+                                    <label for="barrier-no-Attending1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                    </div>
+                                <div class="tab-pane p-3 fade " id="pills-participating"
+                    role="tabpanel" aria-labelledby="pills-participating-tab">
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">participating</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                7
+                            </div>
+                            <h3 class="lead m-0">Actively seeks out opportunities</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Participating7" id="skill-yes-Participating7" value="yes" class="btn-check">
+                                    <label for="skill-yes-Participating7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Participating7" id="skill-no-Participating7" value="no" class="btn-check">
+                                    <label for="skill-no-Participating7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Participating7" id="frequency-always-Participating7" value="always" class="btn-check">
+                                    <label for="frequency-always-Participating7" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Participating7" id="frequency-often-Participating7" value="often" class="btn-check">
+                                    <label for="frequency-often-Participating7" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Participating7" id="frequency-never-Participating7" value="never" class="btn-check">
+                                    <label for="frequency-never-Participating7" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Participating7" id="barrier-yes-Participating7" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Participating7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Participating7" id="barrier-no-Participating7" value="no" class="btn-check">
+                                    <label for="barrier-no-Participating7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">participating</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                6
+                            </div>
+                            <h3 class="lead m-0">Able to tackle projects confidently</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Participating6" id="skill-yes-Participating6" value="yes" class="btn-check">
+                                    <label for="skill-yes-Participating6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Participating6" id="skill-no-Participating6" value="no" class="btn-check">
+                                    <label for="skill-no-Participating6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Participating6" id="frequency-always-Participating6" value="always" class="btn-check">
+                                    <label for="frequency-always-Participating6" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Participating6" id="frequency-often-Participating6" value="often" class="btn-check">
+                                    <label for="frequency-often-Participating6" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Participating6" id="frequency-never-Participating6" value="never" class="btn-check">
+                                    <label for="frequency-never-Participating6" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Participating6" id="barrier-yes-Participating6" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Participating6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Participating6" id="barrier-no-Participating6" value="no" class="btn-check">
+                                    <label for="barrier-no-Participating6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">participating</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                5
+                            </div>
+                            <h3 class="lead m-0">Shows awareness of the similarities and differences</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Participating5" id="skill-yes-Participating5" value="yes" class="btn-check">
+                                    <label for="skill-yes-Participating5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Participating5" id="skill-no-Participating5" value="no" class="btn-check">
+                                    <label for="skill-no-Participating5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Participating5" id="frequency-always-Participating5" value="always" class="btn-check">
+                                    <label for="frequency-always-Participating5" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Participating5" id="frequency-often-Participating5" value="often" class="btn-check">
+                                    <label for="frequency-often-Participating5" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Participating5" id="frequency-never-Participating5" value="never" class="btn-check">
+                                    <label for="frequency-never-Participating5" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Participating5" id="barrier-yes-Participating5" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Participating5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Participating5" id="barrier-no-Participating5" value="no" class="btn-check">
+                                    <label for="barrier-no-Participating5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">participating</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                4
+                            </div>
+                            <h3 class="lead m-0">Engages in group activities</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Participating4" id="skill-yes-Participating4" value="yes" class="btn-check">
+                                    <label for="skill-yes-Participating4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Participating4" id="skill-no-Participating4" value="no" class="btn-check">
+                                    <label for="skill-no-Participating4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Participating4" id="frequency-always-Participating4" value="always" class="btn-check">
+                                    <label for="frequency-always-Participating4" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Participating4" id="frequency-often-Participating4" value="often" class="btn-check">
+                                    <label for="frequency-often-Participating4" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Participating4" id="frequency-never-Participating4" value="never" class="btn-check">
+                                    <label for="frequency-never-Participating4" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Participating4" id="barrier-yes-Participating4" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Participating4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Participating4" id="barrier-no-Participating4" value="no" class="btn-check">
+                                    <label for="barrier-no-Participating4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">participating</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                3
+                            </div>
+                            <h3 class="lead m-0">Shows willingness to try new activities</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Participating3" id="skill-yes-Participating3" value="yes" class="btn-check">
+                                    <label for="skill-yes-Participating3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Participating3" id="skill-no-Participating3" value="no" class="btn-check">
+                                    <label for="skill-no-Participating3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Participating3" id="frequency-always-Participating3" value="always" class="btn-check">
+                                    <label for="frequency-always-Participating3" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Participating3" id="frequency-often-Participating3" value="often" class="btn-check">
+                                    <label for="frequency-often-Participating3" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Participating3" id="frequency-never-Participating3" value="never" class="btn-check">
+                                    <label for="frequency-never-Participating3" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Participating3" id="barrier-yes-Participating3" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Participating3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Participating3" id="barrier-no-Participating3" value="no" class="btn-check">
+                                    <label for="barrier-no-Participating3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">participating</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                2
+                            </div>
+                            <h3 class="lead m-0">Engages in interactive play</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Participating2" id="skill-yes-Participating2" value="yes" class="btn-check">
+                                    <label for="skill-yes-Participating2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Participating2" id="skill-no-Participating2" value="no" class="btn-check">
+                                    <label for="skill-no-Participating2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Participating2" id="frequency-always-Participating2" value="always" class="btn-check">
+                                    <label for="frequency-always-Participating2" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Participating2" id="frequency-often-Participating2" value="often" class="btn-check">
+                                    <label for="frequency-often-Participating2" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Participating2" id="frequency-never-Participating2" value="never" class="btn-check">
+                                    <label for="frequency-never-Participating2" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Participating2" id="barrier-yes-Participating2" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Participating2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Participating2" id="barrier-no-Participating2" value="no" class="btn-check">
+                                    <label for="barrier-no-Participating2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">participating</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                1
+                            </div>
+                            <h3 class="lead m-0">Will respond to experiences that are brought to their attention</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Participating1" id="skill-yes-Participating1" value="yes" class="btn-check">
+                                    <label for="skill-yes-Participating1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Participating1" id="skill-no-Participating1" value="no" class="btn-check">
+                                    <label for="skill-no-Participating1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Participating1" id="frequency-always-Participating1" value="always" class="btn-check">
+                                    <label for="frequency-always-Participating1" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Participating1" id="frequency-often-Participating1" value="often" class="btn-check">
+                                    <label for="frequency-often-Participating1" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Participating1" id="frequency-never-Participating1" value="never" class="btn-check">
+                                    <label for="frequency-never-Participating1" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Participating1" id="barrier-yes-Participating1" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Participating1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Participating1" id="barrier-no-Participating1" value="no" class="btn-check">
+                                    <label for="barrier-no-Participating1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                    </div>
+                                <div class="tab-pane p-3 fade " id="pills-achieving"
+                    role="tabpanel" aria-labelledby="pills-achieving-tab">
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">achieving</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                7
+                            </div>
+                            <h3 class="lead m-0">Confident at making decisions</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Achieving7" id="skill-yes-Achieving7" value="yes" class="btn-check">
+                                    <label for="skill-yes-Achieving7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Achieving7" id="skill-no-Achieving7" value="no" class="btn-check">
+                                    <label for="skill-no-Achieving7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Achieving7" id="frequency-always-Achieving7" value="always" class="btn-check">
+                                    <label for="frequency-always-Achieving7" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Achieving7" id="frequency-often-Achieving7" value="often" class="btn-check">
+                                    <label for="frequency-often-Achieving7" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Achieving7" id="frequency-never-Achieving7" value="never" class="btn-check">
+                                    <label for="frequency-never-Achieving7" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Achieving7" id="barrier-yes-Achieving7" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Achieving7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Achieving7" id="barrier-no-Achieving7" value="no" class="btn-check">
+                                    <label for="barrier-no-Achieving7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">achieving</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                6
+                            </div>
+                            <h3 class="lead m-0">Able to improvise</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Achieving6" id="skill-yes-Achieving6" value="yes" class="btn-check">
+                                    <label for="skill-yes-Achieving6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Achieving6" id="skill-no-Achieving6" value="no" class="btn-check">
+                                    <label for="skill-no-Achieving6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Achieving6" id="frequency-always-Achieving6" value="always" class="btn-check">
+                                    <label for="frequency-always-Achieving6" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Achieving6" id="frequency-often-Achieving6" value="often" class="btn-check">
+                                    <label for="frequency-often-Achieving6" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Achieving6" id="frequency-never-Achieving6" value="never" class="btn-check">
+                                    <label for="frequency-never-Achieving6" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Achieving6" id="barrier-yes-Achieving6" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Achieving6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Achieving6" id="barrier-no-Achieving6" value="no" class="btn-check">
+                                    <label for="barrier-no-Achieving6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">achieving</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                5
+                            </div>
+                            <h3 class="lead m-0">Able to formulate and question information</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Achieving5" id="skill-yes-Achieving5" value="yes" class="btn-check">
+                                    <label for="skill-yes-Achieving5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Achieving5" id="skill-no-Achieving5" value="no" class="btn-check">
+                                    <label for="skill-no-Achieving5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Achieving5" id="frequency-always-Achieving5" value="always" class="btn-check">
+                                    <label for="frequency-always-Achieving5" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Achieving5" id="frequency-often-Achieving5" value="often" class="btn-check">
+                                    <label for="frequency-often-Achieving5" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Achieving5" id="frequency-never-Achieving5" value="never" class="btn-check">
+                                    <label for="frequency-never-Achieving5" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Achieving5" id="barrier-yes-Achieving5" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Achieving5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Achieving5" id="barrier-no-Achieving5" value="no" class="btn-check">
+                                    <label for="barrier-no-Achieving5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">achieving</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                4
+                            </div>
+                            <h3 class="lead m-0">Able to understand the consequences of a decision</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Achieving4" id="skill-yes-Achieving4" value="yes" class="btn-check">
+                                    <label for="skill-yes-Achieving4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Achieving4" id="skill-no-Achieving4" value="no" class="btn-check">
+                                    <label for="skill-no-Achieving4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Achieving4" id="frequency-always-Achieving4" value="always" class="btn-check">
+                                    <label for="frequency-always-Achieving4" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Achieving4" id="frequency-often-Achieving4" value="often" class="btn-check">
+                                    <label for="frequency-often-Achieving4" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Achieving4" id="frequency-never-Achieving4" value="never" class="btn-check">
+                                    <label for="frequency-never-Achieving4" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Achieving4" id="barrier-yes-Achieving4" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Achieving4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Achieving4" id="barrier-no-Achieving4" value="no" class="btn-check">
+                                    <label for="barrier-no-Achieving4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">achieving</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                3
+                            </div>
+                            <h3 class="lead m-0">Has the confidence to do things differently</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Achieving3" id="skill-yes-Achieving3" value="yes" class="btn-check">
+                                    <label for="skill-yes-Achieving3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Achieving3" id="skill-no-Achieving3" value="no" class="btn-check">
+                                    <label for="skill-no-Achieving3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Achieving3" id="frequency-always-Achieving3" value="always" class="btn-check">
+                                    <label for="frequency-always-Achieving3" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Achieving3" id="frequency-often-Achieving3" value="often" class="btn-check">
+                                    <label for="frequency-often-Achieving3" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Achieving3" id="frequency-never-Achieving3" value="never" class="btn-check">
+                                    <label for="frequency-never-Achieving3" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Achieving3" id="barrier-yes-Achieving3" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Achieving3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Achieving3" id="barrier-no-Achieving3" value="no" class="btn-check">
+                                    <label for="barrier-no-Achieving3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">achieving</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                2
+                            </div>
+                            <h3 class="lead m-0">Expresses interests and uses special Interests</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Achieving2" id="skill-yes-Achieving2" value="yes" class="btn-check">
+                                    <label for="skill-yes-Achieving2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Achieving2" id="skill-no-Achieving2" value="no" class="btn-check">
+                                    <label for="skill-no-Achieving2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Achieving2" id="frequency-always-Achieving2" value="always" class="btn-check">
+                                    <label for="frequency-always-Achieving2" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Achieving2" id="frequency-often-Achieving2" value="often" class="btn-check">
+                                    <label for="frequency-often-Achieving2" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Achieving2" id="frequency-never-Achieving2" value="never" class="btn-check">
+                                    <label for="frequency-never-Achieving2" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Achieving2" id="barrier-yes-Achieving2" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Achieving2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Achieving2" id="barrier-no-Achieving2" value="no" class="btn-check">
+                                    <label for="barrier-no-Achieving2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">achieving</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                1
+                            </div>
+                            <h3 class="lead m-0">Able to take instructions and engage</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Achieving1" id="skill-yes-Achieving1" value="yes" class="btn-check">
+                                    <label for="skill-yes-Achieving1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Achieving1" id="skill-no-Achieving1" value="no" class="btn-check">
+                                    <label for="skill-no-Achieving1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Achieving1" id="frequency-always-Achieving1" value="always" class="btn-check">
+                                    <label for="frequency-always-Achieving1" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Achieving1" id="frequency-often-Achieving1" value="often" class="btn-check">
+                                    <label for="frequency-often-Achieving1" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Achieving1" id="frequency-never-Achieving1" value="never" class="btn-check">
+                                    <label for="frequency-never-Achieving1" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Achieving1" id="barrier-yes-Achieving1" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Achieving1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Achieving1" id="barrier-no-Achieving1" value="no" class="btn-check">
+                                    <label for="barrier-no-Achieving1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                    </div>
+                                <div class="tab-pane p-3 fade " id="pills-moving-on"
+                    role="tabpanel" aria-labelledby="pills-moving-on-tab">
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">moving-on</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                7
+                            </div>
+                            <h3 class="lead m-0">Engages with work experience opportunities</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Moving-On7" id="skill-yes-Moving-On7" value="yes" class="btn-check">
+                                    <label for="skill-yes-Moving-On7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Moving-On7" id="skill-no-Moving-On7" value="no" class="btn-check">
+                                    <label for="skill-no-Moving-On7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Moving-On7" id="frequency-always-Moving-On7" value="always" class="btn-check">
+                                    <label for="frequency-always-Moving-On7" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Moving-On7" id="frequency-often-Moving-On7" value="often" class="btn-check">
+                                    <label for="frequency-often-Moving-On7" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Moving-On7" id="frequency-never-Moving-On7" value="never" class="btn-check">
+                                    <label for="frequency-never-Moving-On7" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Moving-On7" id="barrier-yes-Moving-On7" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Moving-On7" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Moving-On7" id="barrier-no-Moving-On7" value="no" class="btn-check">
+                                    <label for="barrier-no-Moving-On7" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">moving-on</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                6
+                            </div>
+                            <h3 class="lead m-0">Engages with exposure through the curriculum</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Moving-On6" id="skill-yes-Moving-On6" value="yes" class="btn-check">
+                                    <label for="skill-yes-Moving-On6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Moving-On6" id="skill-no-Moving-On6" value="no" class="btn-check">
+                                    <label for="skill-no-Moving-On6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Moving-On6" id="frequency-always-Moving-On6" value="always" class="btn-check">
+                                    <label for="frequency-always-Moving-On6" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Moving-On6" id="frequency-often-Moving-On6" value="often" class="btn-check">
+                                    <label for="frequency-often-Moving-On6" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Moving-On6" id="frequency-never-Moving-On6" value="never" class="btn-check">
+                                    <label for="frequency-never-Moving-On6" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Moving-On6" id="barrier-yes-Moving-On6" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Moving-On6" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Moving-On6" id="barrier-no-Moving-On6" value="no" class="btn-check">
+                                    <label for="barrier-no-Moving-On6" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">moving-on</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                5
+                            </div>
+                            <h3 class="lead m-0">Shows initiative when solving problems</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Moving-On5" id="skill-yes-Moving-On5" value="yes" class="btn-check">
+                                    <label for="skill-yes-Moving-On5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Moving-On5" id="skill-no-Moving-On5" value="no" class="btn-check">
+                                    <label for="skill-no-Moving-On5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Moving-On5" id="frequency-always-Moving-On5" value="always" class="btn-check">
+                                    <label for="frequency-always-Moving-On5" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Moving-On5" id="frequency-often-Moving-On5" value="often" class="btn-check">
+                                    <label for="frequency-often-Moving-On5" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Moving-On5" id="frequency-never-Moving-On5" value="never" class="btn-check">
+                                    <label for="frequency-never-Moving-On5" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Moving-On5" id="barrier-yes-Moving-On5" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Moving-On5" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Moving-On5" id="barrier-no-Moving-On5" value="no" class="btn-check">
+                                    <label for="barrier-no-Moving-On5" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">moving-on</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                4
+                            </div>
+                            <h3 class="lead m-0">Able to solve a problem independently</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Moving-On4" id="skill-yes-Moving-On4" value="yes" class="btn-check">
+                                    <label for="skill-yes-Moving-On4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Moving-On4" id="skill-no-Moving-On4" value="no" class="btn-check">
+                                    <label for="skill-no-Moving-On4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Moving-On4" id="frequency-always-Moving-On4" value="always" class="btn-check">
+                                    <label for="frequency-always-Moving-On4" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Moving-On4" id="frequency-often-Moving-On4" value="often" class="btn-check">
+                                    <label for="frequency-often-Moving-On4" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Moving-On4" id="frequency-never-Moving-On4" value="never" class="btn-check">
+                                    <label for="frequency-never-Moving-On4" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Moving-On4" id="barrier-yes-Moving-On4" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Moving-On4" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Moving-On4" id="barrier-no-Moving-On4" value="no" class="btn-check">
+                                    <label for="barrier-no-Moving-On4" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">moving-on</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                3
+                            </div>
+                            <h3 class="lead m-0">Shows willingness to develop skills</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Moving-On3" id="skill-yes-Moving-On3" value="yes" class="btn-check">
+                                    <label for="skill-yes-Moving-On3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Moving-On3" id="skill-no-Moving-On3" value="no" class="btn-check">
+                                    <label for="skill-no-Moving-On3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Moving-On3" id="frequency-always-Moving-On3" value="always" class="btn-check">
+                                    <label for="frequency-always-Moving-On3" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Moving-On3" id="frequency-often-Moving-On3" value="often" class="btn-check">
+                                    <label for="frequency-often-Moving-On3" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Moving-On3" id="frequency-never-Moving-On3" value="never" class="btn-check">
+                                    <label for="frequency-never-Moving-On3" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Moving-On3" id="barrier-yes-Moving-On3" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Moving-On3" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Moving-On3" id="barrier-no-Moving-On3" value="no" class="btn-check">
+                                    <label for="barrier-no-Moving-On3" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">moving-on</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                2
+                            </div>
+                            <h3 class="lead m-0">Accepts change in familiar situations</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Moving-On2" id="skill-yes-Moving-On2" value="yes" class="btn-check">
+                                    <label for="skill-yes-Moving-On2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Moving-On2" id="skill-no-Moving-On2" value="no" class="btn-check">
+                                    <label for="skill-no-Moving-On2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Moving-On2" id="frequency-always-Moving-On2" value="always" class="btn-check">
+                                    <label for="frequency-always-Moving-On2" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Moving-On2" id="frequency-often-Moving-On2" value="often" class="btn-check">
+                                    <label for="frequency-often-Moving-On2" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Moving-On2" id="frequency-never-Moving-On2" value="never" class="btn-check">
+                                    <label for="frequency-never-Moving-On2" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Moving-On2" id="barrier-yes-Moving-On2" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Moving-On2" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Moving-On2" id="barrier-no-Moving-On2" value="no" class="btn-check">
+                                    <label for="barrier-no-Moving-On2" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-body text-center d-flex align-items-center" id="card-body">
+                            <div class="position-absolute top-0 start-0">
+                                <span class="badge rounded-pill bg-primary">moving-on</span>
+                            </div>
+                            <div style="font-size: 3rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-right: 15px;">
+                                1
+                            </div>
+                            <h3 class="lead m-0">Able to identify choice</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-row">
+                                <span>Can the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-use-Moving-On1" id="skill-yes-Moving-On1" value="yes" class="btn-check">
+                                    <label for="skill-yes-Moving-On1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="skill-use-Moving-On1" id="skill-no-Moving-On1" value="no" class="btn-check">
+                                    <label for="skill-no-Moving-On1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>How often the young person/child use this skill?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="skill-frequency-Moving-On1" id="frequency-always-Moving-On1" value="always" class="btn-check">
+                                    <label for="frequency-always-Moving-On1" class="btn btn-outline-primary btn-sm">Always</label>
+                                    <input type="radio" name="skill-frequency-Moving-On1" id="frequency-often-Moving-On1" value="often" class="btn-check">
+                                    <label for="frequency-often-Moving-On1" class="btn btn-outline-primary btn-sm">Often</label>
+                                    <input type="radio" name="skill-frequency-Moving-On1" id="frequency-never-Moving-On1" value="never" class="btn-check">
+                                    <label for="frequency-never-Moving-On1" class="btn btn-outline-primary btn-sm">Never</label>
+                                </div>
+                            </div>
+                            <div class="footer-row">
+                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                <div class="btn-group">
+                                    <input type="radio" name="education-barrier-Moving-On1" id="barrier-yes-Moving-On1" value="yes" class="btn-check">
+                                    <label for="barrier-yes-Moving-On1" class="btn btn-outline-primary btn-sm">Yes</label>
+                                    <input type="radio" name="education-barrier-Moving-On1" id="barrier-no-Moving-On1" value="no" class="btn-check">
+                                    <label for="barrier-no-Moving-On1" class="btn btn-outline-primary btn-sm">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                    </div>
+                            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto m-4">
+                <button class="btn btn-success" type="button"><i class="fa fa-save"></i> Save Assessment</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+    <script>
+        $('input[type="radio"]').on('change', function() {
+            clickedRadio = $(this);
+            cardBody = clickedRadio.closest('.card').find('.card-body');
+
+            console.log(clickedRadio, cardBody);
+
+            if (clickedRadio.attr('name') === 'education-barrier') {
+                bgColor = clickedRadio.val() === 'yes' ? 'red' : 'green';
+                cardBody.css({
+                    backgroundColor: bgColor,
+                    color: bgColor === 'red' ? 'white' : 'black'
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
