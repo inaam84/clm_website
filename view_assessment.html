@@ -1,0 +1,1440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Assessment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        
+    <style>
+        .table-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* 6 columns */
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 90px;
+            width: 195px;
+            font-size: 0.75rem;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-footer {
+            /* height: 30px; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+
+        .traffic-light label {
+            margin: 0;
+            font-size: 0.75rem;
+            cursor: pointer;
+        }
+
+        .footer-row {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                                                <th>Relationships <i class="fa fa-handshake"></i> 
+                                                                <th>Wellbeing <i class="fa fa-leaf"></i> 
+                                                                <th>Attending <i class="fa fa-calendar-check"></i> 
+                                                                <th>Participating <i class="fa fa-hand-paper"></i> 
+                                                                <th>Achieving <i class="fa fa-medal"></i> 
+                                                                <th>Moving-On <i class="fa fa-road"></i> 
+                                                            </tr>
+                        </thead>
+                        <tbody>
+                                                        <tr>
+                                <th class="align-middle" style="font-size: 1.5rem; font-family: 'Courier New', Courier, monospace; font-weight: bold;">7</th>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Demonstrates empathy by adjusting their own behaviours
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Has the confidence to speak out about emotional wellbeing
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Sustains good levels of attendance
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Actively seeks out opportunities
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Confident at making decisions
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Engages with work experience opportunities
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                            </tr>
+                                                        <tr>
+                                <th class="align-middle" style="font-size: 1.5rem; font-family: 'Courier New', Courier, monospace; font-weight: bold;">6</th>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Able to sustain mutually respectful friendships
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Demonstrates self-awareness
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Able to access support
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Able to tackle projects confidently
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Able to improvise
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Engages with exposure through the curriculum
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                            </tr>
+                                                        <tr>
+                                <th class="align-middle" style="font-size: 1.5rem; font-family: 'Courier New', Courier, monospace; font-weight: bold;">5</th>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Able to form positive attachments
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Able to manage own basic hygiene needs
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Engages in leisure and/or outdoor activities
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Shows awareness of the similarities and differences
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Able to formulate and question information
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Shows initiative when solving problems
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                            </tr>
+                                                        <tr>
+                                <th class="align-middle" style="font-size: 1.5rem; font-family: 'Courier New', Courier, monospace; font-weight: bold;">4</th>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Able to work and play co-operatively
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Has an awareness of stressors 
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Regularly feels positive about attending school
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Engages in group activities
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Able to understand the consequences of a decision
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Able to solve a problem independently
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                            </tr>
+                                                        <tr>
+                                <th class="align-middle" style="font-size: 1.5rem; font-family: 'Courier New', Courier, monospace; font-weight: bold;">3</th>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Shows sensitivity to their own and others’ feelings
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Able to seek support through co-regulation of emotions
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Engages in positive routines for entering school
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Shows willingness to try new activities
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Has the confidence to do things differently
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Shows willingness to develop skills
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                            </tr>
+                                                        <tr>
+                                <th class="align-middle" style="font-size: 1.5rem; font-family: 'Courier New', Courier, monospace; font-weight: bold;">2</th>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Able to interact positively with peers
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: green;">
+                                            Begins to recognize danger and seeks support
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Able to separate from close carers 
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Engages in interactive play
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Expresses interests and uses special Interests
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Accepts change in familiar situations
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                            </tr>
+                                                        <tr>
+                                <th class="align-middle" style="font-size: 1.5rem; font-family: 'Courier New', Courier, monospace; font-weight: bold;">1</th>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Able to interact positively with supporting adults
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Able to express a range of emotions
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-warning">Often</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Accepts being with others
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: #ffbf00;">
+                                            Will respond to experiences that are brought to their attention
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Able to take instructions and engage
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Yes</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-success">Always</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                                <td>
+                                    <div class="card">
+                                        <div class="card-body text-center" id="card-body-1" style="background-color: red;">
+                                            Able to identify choice
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle fa-lg text-info" style="cursor: pointer;" data-bs-toggle="modal" 
+                                                data-bs-target="#infoModal" onclick="setModalContent(this);"></i>
+                                        </div>
+                                        <div class="dummy" style="display: none;">
+                                            <div class="footer-row">
+                                                <span>Can the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>How often the young person/child use this skill?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">Never</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-row">
+                                                <span>Is this area presenting a barrier in accessing or participating fully in education?</span>
+                                                <div class="btn-group">
+                                                                                                        <span class="badge bg-danger">No</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                                                                            </tr>
+                                                    </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Skill Assessment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-content">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add functionality for all card bodies dynamically
+        document.querySelectorAll('.card').forEach((card, index) => {
+            const cardBody = card.querySelector('.card-body');
+            let bgColor = cardBody.style.backgroundColor;
+            cardBody.style.color = bgColor === 'rgb(255, 191, 0)' ? 'black' : 'white';
+
+        });
+
+        function setModalContent(icon) {
+            let cardBodyText = icon.closest('.card').querySelector('.card-body').innerHTML;
+            let dummy = icon.closest('.card').querySelector('.dummy').innerHTML;
+            document.getElementById('infoModalLabel').innerHTML = cardBodyText;
+            document.getElementById('modal-content').innerHTML = dummy;
+        }
+
+    </script>
+</body>
+
+</html>
