@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Group</title>
+    <title>Assessment Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -69,6 +69,33 @@
             min-width: 90px;
             display: flex;
             gap: 5px;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            text-align: center;
+        }
+        .close {
+            color: red;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -761,124 +788,92 @@
                     <h5>Available Learners</h5>
                     <input type="text" id="searchLearners" class="form-control mb-2" placeholder="Search learners...">
                     <ul class="list-group" id="availableLearners">
-                                                <li class="list-group-item">
-                            <span>Estel McCullough</span>
+                                                <li class="list-group-item trigger">
+                            <span>Yasmine Johns</span>
                             <span class="badge-group">
-                                <span class="badge bg-danger">25</span>
-                                <span class="badge bg-warning">3</span>
-                                <span class="badge bg-success">34</span>
+                                <span class="badge bg-danger">41</span>
+                                <span class="badge bg-warning">12</span>
+                                <span class="badge bg-success">3</span>
                             </span>
                         </li>
-                                                <li class="list-group-item">
-                            <span>Zander Rowe</span>
+                                                <li class="list-group-item trigger">
+                            <span>Jaida Jaskolski</span>
                             <span class="badge-group">
-                                <span class="badge bg-danger">23</span>
-                                <span class="badge bg-warning">23</span>
+                                <span class="badge bg-danger">21</span>
+                                <span class="badge bg-warning">31</span>
+                                <span class="badge bg-success">16</span>
+                            </span>
+                        </li>
+                                                <li class="list-group-item trigger">
+                            <span>Ms. Kassandra Sporer MD</span>
+                            <span class="badge-group">
+                                <span class="badge bg-danger">38</span>
+                                <span class="badge bg-warning">3</span>
                                 <span class="badge bg-success">8</span>
                             </span>
                         </li>
-                                                <li class="list-group-item">
-                            <span>Lessie Corkery</span>
+                                                <li class="list-group-item trigger">
+                            <span>Mrs. Nyasia Rodriguez</span>
                             <span class="badge-group">
-                                <span class="badge bg-danger">34</span>
-                                <span class="badge bg-warning">18</span>
-                                <span class="badge bg-success">4</span>
+                                <span class="badge bg-danger">18</span>
+                                <span class="badge bg-warning">22</span>
+                                <span class="badge bg-success">39</span>
                             </span>
                         </li>
-                                                <li class="list-group-item">
-                            <span>Rosalind Hill</span>
+                                                <li class="list-group-item trigger">
+                            <span>Ms. Kathryne Zieme</span>
                             <span class="badge-group">
-                                <span class="badge bg-danger">17</span>
-                                <span class="badge bg-warning">2</span>
-                                <span class="badge bg-success">21</span>
+                                <span class="badge bg-danger">32</span>
+                                <span class="badge bg-warning">21</span>
+                                <span class="badge bg-success">3</span>
                             </span>
                         </li>
-                                                <li class="list-group-item">
-                            <span>Wilhelm Becker</span>
+                                                <li class="list-group-item trigger">
+                            <span>Carlo Altenwerth</span>
                             <span class="badge-group">
-                                <span class="badge bg-danger">34</span>
-                                <span class="badge bg-warning">13</span>
-                                <span class="badge bg-success">2</span>
+                                <span class="badge bg-danger">30</span>
+                                <span class="badge bg-warning">8</span>
+                                <span class="badge bg-success">13</span>
                             </span>
                         </li>
-                                                <li class="list-group-item">
-                            <span>Dr. Bettye Rau Sr.</span>
+                                                <li class="list-group-item trigger">
+                            <span>Fermin Crooks</span>
                             <span class="badge-group">
-                                <span class="badge bg-danger">34</span>
-                                <span class="badge bg-warning">15</span>
+                                <span class="badge bg-danger">33</span>
+                                <span class="badge bg-warning">10</span>
+                                <span class="badge bg-success">16</span>
+                            </span>
+                        </li>
+                                                <li class="list-group-item trigger">
+                            <span>Ms. Ana Schiller</span>
+                            <span class="badge-group">
+                                <span class="badge bg-danger">7</span>
+                                <span class="badge bg-warning">39</span>
+                                <span class="badge bg-success">15</span>
+                            </span>
+                        </li>
+                                                <li class="list-group-item trigger">
+                            <span>Troy O&#039;Kon</span>
+                            <span class="badge-group">
+                                <span class="badge bg-danger">3</span>
+                                <span class="badge bg-warning">1</span>
                                 <span class="badge bg-success">33</span>
                             </span>
                         </li>
-                                                <li class="list-group-item">
-                            <span>Dee Goyette</span>
+                                                <li class="list-group-item trigger">
+                            <span>Kitty Gerhold</span>
                             <span class="badge-group">
-                                <span class="badge bg-danger">15</span>
-                                <span class="badge bg-warning">19</span>
-                                <span class="badge bg-success">29</span>
-                            </span>
-                        </li>
-                                                <li class="list-group-item">
-                            <span>Arthur Hegmann</span>
-                            <span class="badge-group">
-                                <span class="badge bg-danger">12</span>
-                                <span class="badge bg-warning">30</span>
-                                <span class="badge bg-success">42</span>
-                            </span>
-                        </li>
-                                                <li class="list-group-item">
-                            <span>Cassie Schmidt</span>
-                            <span class="badge-group">
-                                <span class="badge bg-danger">3</span>
+                                <span class="badge bg-danger">37</span>
                                 <span class="badge bg-warning">34</span>
-                                <span class="badge bg-success">28</span>
+                                <span class="badge bg-success">36</span>
                             </span>
                         </li>
-                                                <li class="list-group-item">
-                            <span>Savanah Ratke</span>
+                                                <li class="list-group-item trigger">
+                            <span>Dangelo Torp</span>
                             <span class="badge-group">
                                 <span class="badge bg-danger">23</span>
-                                <span class="badge bg-warning">14</span>
-                                <span class="badge bg-success">10</span>
-                            </span>
-                        </li>
-                                                <li class="list-group-item">
-                            <span>Dr. Melvina Sipes</span>
-                            <span class="badge-group">
-                                <span class="badge bg-danger">6</span>
-                                <span class="badge bg-warning">27</span>
-                                <span class="badge bg-success">31</span>
-                            </span>
-                        </li>
-                                                <li class="list-group-item">
-                            <span>Hollie Vandervort</span>
-                            <span class="badge-group">
-                                <span class="badge bg-danger">17</span>
-                                <span class="badge bg-warning">41</span>
-                                <span class="badge bg-success">23</span>
-                            </span>
-                        </li>
-                                                <li class="list-group-item">
-                            <span>Dr. Delia Greenfelder IV</span>
-                            <span class="badge-group">
-                                <span class="badge bg-danger">27</span>
-                                <span class="badge bg-warning">15</span>
-                                <span class="badge bg-success">5</span>
-                            </span>
-                        </li>
-                                                <li class="list-group-item">
-                            <span>Mae Hayes</span>
-                            <span class="badge-group">
-                                <span class="badge bg-danger">17</span>
-                                <span class="badge bg-warning">38</span>
-                                <span class="badge bg-success">29</span>
-                            </span>
-                        </li>
-                                                <li class="list-group-item">
-                            <span>Guido Dach</span>
-                            <span class="badge-group">
-                                <span class="badge bg-danger">10</span>
-                                <span class="badge bg-warning">26</span>
-                                <span class="badge bg-success">20</span>
+                                <span class="badge bg-warning">39</span>
+                                <span class="badge bg-success">27</span>
                             </span>
                         </li>
                                             </ul>
@@ -907,6 +902,13 @@
             <button class="btn btn-primary w-100" id="saveGroupBtn">Save Group</button>
         </div>
 
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <pre id="modal-text"></pre>
+            </div>
+        </div>
 
     </div>
     
@@ -957,6 +959,116 @@
                 item.style.display = item.textContent.toLowerCase().includes(filter) ? "" : "none";
             });
         });
+
+        const g = `<table class="table table-bordered w-auto" style="width: auto !important; table-layout: auto !important;">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Relationships <i class="fa fa-handshake"></i>
+                    </th>
+                    <th>Wellbeing <i class="fa fa-leaf"></i>
+                    </th>
+                    <th>Attending <i class="fa fa-calendar-check"></i>
+                    </th>
+                    <th>Participating <i class="fa fa-hand-paper"></i>
+                    </th>
+                    <th>Achieving <i class="fa fa-medal"></i>
+                    </th>
+                    <th>Moving-On <i class="fa fa-road"></i>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                        <tr>
+                <th class="align-middle">7
+                                </th><td style="font-size: smaller; background-color: #ffbf00;">Demonstrates empathy by adjusting their own behaviours</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Has the confidence to speak out about emotional wellbeing</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Sustains good levels of attendance</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Actively seeks out opportunities</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Confident at making decisions</td>
+                                <td style="font-size: smaller; background-color: red;">Engages with work experience opportunities</td>
+                            </tr>
+                        <tr>
+                <th class="align-middle">6
+                                </th><td style="font-size: smaller; background-color: #ffbf00;">Able to sustain mutually respectful friendships</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Demonstrates self-awareness</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Able to access support</td>
+                                <td style="font-size: smaller; background-color: red;">Able to tackle projects confidently</td>
+                                <td style="font-size: smaller; background-color: green;">Able to improvise</td>
+                                <td style="font-size: smaller; background-color: red;">Engages with exposure through the curriculum</td>
+                            </tr>
+                        <tr>
+                <th class="align-middle">5
+                                </th><td style="font-size: smaller; background-color: #ffbf00;">Able to form positive attachments</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Able to manage own basic hygiene needs</td>
+                                <td style="font-size: smaller; background-color: green;">Engages in leisure and/or outdoor activities</td>
+                                <td style="font-size: smaller; background-color: red;">Shows awareness of the similarities and differences</td>
+                                <td style="font-size: smaller; background-color: red;">Able to formulate and question information</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Shows initiative when solving problems</td>
+                            </tr>
+                        <tr>
+                <th class="align-middle">4
+                                </th><td style="font-size: smaller; background-color: #ffbf00;">Able to work and play co-operatively</td>
+                                <td style="font-size: smaller; background-color: green;">Has an awareness of stressors </td>
+                                <td style="font-size: smaller; background-color: red;">Regularly feels positive about attending school</td>
+                                <td style="font-size: smaller; background-color: red;">Engages in group activities</td>
+                                <td style="font-size: smaller; background-color: green;">Able to understand the consequences of a decision</td>
+                                <td style="font-size: smaller; background-color: green;">Able to solve a problem independently</td>
+                            </tr>
+                        <tr>
+                <th class="align-middle">3
+                                </th><td style="font-size: smaller; background-color: #ffbf00;">Shows sensitivity to their own and others’ feelings</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Able to seek support through co-regulation of emotions</td>
+                                <td style="font-size: smaller; background-color: green;">Engages in positive routines for entering school</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Shows willingness to try new activities</td>
+                                <td style="font-size: smaller; background-color: red;">Has the confidence to do things differently</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Shows willingness to develop skills</td>
+                            </tr>
+                        <tr>
+                <th class="align-middle">2
+                                </th><td style="font-size: smaller; background-color: red;">Able to interact positively with peers</td>
+                                <td style="font-size: smaller; background-color: green;">Begins to recognize danger and seeks support</td>
+                                <td style="font-size: smaller; background-color: #ffbf00;">Able to separate from close carers </td>
+                                <td style="font-size: smaller; background-color: green;">Engages in interactive play</td>
+                                <td style="font-size: smaller; background-color: red;">Expresses interests and uses special Interests</td>
+                                <td style="font-size: smaller; background-color: red;">Accepts change in familiar situations</td>
+                            </tr>
+                        <tr>
+                <th class="align-middle">1
+                                </th><td style="font-size: smaller; background-color: red;">Able to interact positively with supporting adults</td>
+                                <td style="font-size: smaller; background-color: green;">Able to express a range of emotions</td>
+                                <td style="font-size: smaller; background-color: green;">Accepts being with others</td>
+                                <td style="font-size: smaller; background-color: red;">Will respond to experiences that are brought to their attention</td>
+                                <td style="font-size: smaller; background-color: red;">Able to take instructions and engage</td>
+                                <td style="font-size: smaller; background-color: green;">Able to identify choice</td>
+                            </tr>
+                        </tbody>
+        </table>`;
+
+        const modal = document.getElementById("myModal");
+        const modalText = document.getElementById("modal-text");
+        const closeModal = document.querySelector(".close");
+
+        const triggers = document.getElementsByClassName("trigger");
+
+        for (let i = 0; i < triggers.length; i++) {
+            triggers[i].addEventListener("dblclick", function() {
+                modalText.innerHTML = g; // Show HTML content
+                modal.style.display = "block";
+            });
+        }
+
+
+        closeModal.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+
     </script>
 </body>
 
